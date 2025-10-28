@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @GetMapping("/hello")
-    public String sayHello() {
-        return "Hello, Hepsi! Welcome to your first REST API 🚀";
+    @GetMapping("/")
+    public String hello() {
+        return "Hello from REST API";
     }
 }
