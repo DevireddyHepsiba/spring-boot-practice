@@ -25,7 +25,7 @@ public class DbConnection {
         try {
             // Attempt to establish database connection using credentials
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
-            System.out.println("Connected to Database!");
+            System.err.println("Connected to Database!");
         } catch (SQLException e) {
             // Print stack trace if connection fails
             e.printStackTrace();

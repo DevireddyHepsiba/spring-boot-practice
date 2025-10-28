@@ -1,0 +1,113 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.hepsi:spring-boot-practice >-------------------
+[INFO] Building spring-boot-practice 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.6.2:java (default-cli) @ spring-boot-practice ---
+
+=== Step 1: Creating Table ===
+
+=== Step 2: Inserting Records ===
+
+=== Step 3: Reading Records ===
+----------------------------------------
+ID | Vehicle Number | Type | Status
+----------------------------------------
+ 7 | TS09AA1001    | Car  | Active
+ 8 | TS09AA1001    | Car  | Active
+ 9 | TS08BB2002    | Truck | Active
+10 | TS07CC3003    | Bus  | Active
+11 | TS09AA1001    | Car  | Active
+12 | TS08BB2002    | Truck | Active
+13 | TS07CC3003    | Bus  | Active
+14 | TS09AA1001    | Car  | Active
+15 | TS08BB2002    | Truck | Active
+16 | TS07CC3003    | Bus  | Active
+17 | TS09AA1001    | Car  | Active
+18 | TS08BB2002    | Truck | Active
+19 | TS07CC3003    | Bus  | Active
+----------------------------------------
+
+=== Step 4: Updating Records ===
+
+--- After Update ---
+----------------------------------------
+ID | Vehicle Number | Type | Status
+----------------------------------------
+ 7 | TS09AA1001    | Car  | Active
+ 8 | TS09AA1001    | Car  | Active
+ 9 | TS08BB2002    | Truck | Active
+10 | TS07CC3003    | Bus  | Active
+11 | TS09AA1001    | Car  | Active
+12 | TS08BB2002    | Truck | Active
+13 | TS07CC3003    | Bus  | Active
+14 | TS09AA1001    | Car  | Active
+15 | TS08BB2002    | Truck | Active
+16 | TS07CC3003    | Bus  | Active
+17 | TS09AA1001    | Car  | Active
+18 | TS08BB2002    | Truck | Active
+19 | TS07CC3003    | Bus  | Active
+----------------------------------------
+
+=== Step 5: Deleting Records ===
+
+--- Final Records ---
+----------------------------------------
+ID | Vehicle Number | Type | Status
+----------------------------------------
+ 7 | TS09AA1001    | Car  | Active
+ 8 | TS09AA1001    | Car  | Active
+ 9 | TS08BB2002    | Truck | Active
+10 | TS07CC3003    | Bus  | Active
+11 | TS09AA1001    | Car  | Active
+12 | TS08BB2002    | Truck | Active
+13 | TS07CC3003    | Bus  | Active
+14 | TS09AA1001    | Car  | Active
+15 | TS08BB2002    | Truck | Active
+16 | TS07CC3003    | Bus  | Active
+17 | TS09AA1001    | Car  | Active
+18 | TS08BB2002    | Truck | Active
+19 | TS07CC3003    | Bus  | Active
+----------------------------------------
+[WARNING] thread Thread[mysql-cj-abandoned-connection-cleanup,5,jdbc.jdbcDemo] was interrupted but is still alive after waiting at least 15000msecs
+[WARNING] thread Thread[mysql-cj-abandoned-connection-cleanup,5,jdbc.jdbcDemo] will linger despite being asked to die via interruption
+[WARNING] NOTE: 1 thread(s) did not finish despite being asked to via interruption. This is not a problem with exec:java, it is a problem with the running code. Although not serious, it should be remedied.
+[WARNING] Couldn't destroy threadgroup org.codehaus.mojo.exec.AbstractExecJavaBase$IsolatedThreadGroup[name=jdbc.jdbcDemo,maxpri=10]
+java.lang.IllegalThreadStateException
+    at java.lang.ThreadGroup.destroy (ThreadGroup.java:803)
+    at org.codehaus.mojo.exec.AbstractExecJavaBase.execute (AbstractExecJavaBase.java:345)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:126)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:328)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:316)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:212)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:174)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:75)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:162)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:159)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:105)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:73)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:53)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:118)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:261)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:173)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:101)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:906)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:283)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:206)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at jdk.internal.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:77)
+    at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:568)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:361)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.284 s
+[INFO] Finished at: 2025-10-28T13:10:56+05:30
+[INFO] ------------------------------------------------------------------------
